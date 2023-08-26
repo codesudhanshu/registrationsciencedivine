@@ -11,7 +11,7 @@ const PublicRegistration = () => {
    
 
    const submitdata = async () =>{
-    axios.post('http://localhost:8081/api/reception/registration',{name,email,address,phonenumber})
+    axios.post('https://registrationsciencedivine-api.vercel.app/api/reception/registration',{name,email,address,phonenumber})
     .then(()=>console.log("the data has been succesfully added"))
     .catch((err)=>console.log(err))
 
